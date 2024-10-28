@@ -4,8 +4,8 @@ class Channel {
   final String description;
   final String profileImageUrl;
   final String bannerImageUrl;
-  final int subscribersCount;
-  final int videosCount;
+  final String subscribersCount;
+  final String videosCount;
   final DateTime createdDate;
 
   Channel({

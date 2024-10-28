@@ -6,9 +6,9 @@ class Video {
   final String description;
   final Channel channel;
   final String thumbnailUrl;
-  final int viewsCount;
+  final String viewsCount;
   final DateTime publishedDate;
-  final int likesCount;
+  final String likesCount;
   final Duration duration;
   final String videoUrl;
 
