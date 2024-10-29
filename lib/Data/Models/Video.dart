@@ -1,4 +1,5 @@
 import 'package:youtube/Data/Models/Channel.dart';
+import 'package:youtube/Data/Models/Data.dart';
 
 class Video {
   final int id;
@@ -24,4 +25,8 @@ class Video {
     required this.duration,
     required this.videoUrl,
   });
+}
+
+List<Video> getAllVideos() {
+  return videos.toList();
 }
