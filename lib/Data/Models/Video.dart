@@ -27,6 +27,23 @@ class Video {
   });
 }
 
-List<Video> getAllVideos() {
-  return videos.toList();
+List<Video> getAllVideos() 
+{
+  var list = videos.toList();
+  list.shuffle();
+  return list;
+}
+
+Video getVideoById(int id)
+{
+  return videos.where((v) => v.id == id).first;
+}
+
+List<Video> getVideosRecommandations(int id)
+{
+  var list = videos.where((v) => v.id != id).toList();
+  list.shuffle();
+  list.getRange(0, 4);
+
+  return list;
 }
